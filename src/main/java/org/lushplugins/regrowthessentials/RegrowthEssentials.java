@@ -1,26 +1,22 @@
 package org.lushplugins.regrowthessentials;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.lushplugins.regrowthessentials.command.*;
+import revxrsal.commands.bukkit.BukkitLamp;
 
 public final class RegrowthEssentials extends JavaPlugin {
-    private static RegrowthEssentials plugin;
-
-    @Override
-    public void onLoad() {
-        plugin = this;
-    }
 
     @Override
     public void onEnable() {
-        // Enable implementation
-    }
-
-    @Override
-    public void onDisable() {
-        // Disable implementation
-    }
-
-    public static RegrowthEssentials getInstance() {
-        return plugin;
+        BukkitLamp.builder(this)
+            .build()
+            .register(
+                new Aliases(),
+                new ChatCommands(),
+                new ContainerCommands(),
+                new ItemCommands(),
+                new PlayerCommands(),
+                new TeleportCommands()
+            );
     }
 }
