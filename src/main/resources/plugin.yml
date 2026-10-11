@@ -1,5 +1,5 @@
 name: RegrowthEssentials
 version: ${version}+${commit}
 main: org.lushplugins.regrowthessentials.RegrowthEssentials
-api-version: '1.21'
+api-version: '26.2'
 github-repo: RegrowthMC/RegrowthEssentials
