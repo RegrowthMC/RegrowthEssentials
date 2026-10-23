@@ -22,8 +22,8 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:26.2.build.+")
 
     // Libraries
-    implementation("io.github.revxrsal:lamp.common:4.0.0-rc.19")
-    implementation("io.github.revxrsal:lamp.bukkit:4.0.0-rc.19")
+    implementation("io.github.revxrsal:lamp.common:4.0.0")
+    implementation("io.github.revxrsal:lamp.bukkit:4.0.0")
 }
 
 java {
